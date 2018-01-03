@@ -1,0 +1,14 @@
+{
+  "name": "test-vi",
+  "version": "1.0.0",
+  "description": "Void Inc. Test Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "thakyZ",
+  "license": "ISC",
+  "dependencies": {
+    "mdi": "^2.1.19"
+  }
+}
