@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="/css/materialdesignicons.min.css">
   </head>
   <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
+    <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
       <header class="header-transparent mdl-layout__header is-casting-shadow">
         <div class="mdl-layout__header-row mdl-layout__header dark-header">
           <!-- Add spacer, to align navagation to the right -->
@@ -21,16 +21,16 @@
           <!-- Navigation -->
           <nav class="mdl-navigation top-nav">
             <a class="mdl-navigation__link" href="">
-              <i class="material-icons" role="presentation">email</i>
-              Contact
+              <i class="material-icons mdi mdi-email" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Contact</span>
             </a>
             <a class="mdl-navigation__link" href="">
-              <i class="material-icons" role="presentation">chat</i>
-              Discord
+              <i class="material-icons mdi mdi-message-text" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Discord</span>
             </a>
             <a class="mdl-navigation__link" href="">
-              <i class="material-icons" role="presentation">forum</i>
-              Forum
+              <i class="material-icons mdi mdi-forum" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Forum</span>
             </a>
           </nav>
         </div>
@@ -112,61 +112,82 @@
         </span>
         <nav class="mdl-navigation">
           <a class="mdl-color-text--black mdl-navigation__link" href="/">
-            <i class="mdl-color-text--black mdi mdi-home">home</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-home" role="presentation"></i>
             Home
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">favorite</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-heart" role="presentation"></i>
             About
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">work</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-briefcase" role="presentation"></i>
             Projects
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">games</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-gamepad" role="presentation"></i>
             Games
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">note_add</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-note-plus" role="presentation"></i>
             Mods
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">settings</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-settings" role="presentation"></i>
             Tools
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">storage</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-server" role="presentation"></i>
             Servers
           </a>
           <a class="mdl-color-text--black mdl-navigation__link" href="">
-            <i class="mdl-color-text--black material-icons" role="presentation">attach_money</i>
+            <i class="mdl-color-text--black material-icons mdi mdi-gift" role="presentation"></i>
             Donate
           </a>
         </nav>
       </div>
-      <main class="mdl-layout__content">
-        <div class="page-content">
-          <h1>This is a test page.</h1>
-        </div>
-      </main>
-      <footer class="mdl-mini-footer footer-fix">
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo">
-            More Information
+      <main class="mdl-layout__content vi-background">
+        <div class="home-container mdl-grid">
+          <div class="mdl-card vi-banner mdl-cell mdl-cell--8-col mdl-shadow--3dp">
+            <div class="mdl-card__media mdl-color-text--white">
+              <h3>Void Inc.</h3>
+            </div>
+            <div class="mdl-card__supporting-text meta mdl-color-text--black">
+              <div class="minilogo"></div>
+              <div>
+                <p><strong class="mdl-color-text--blue">Gamers and programmers in space.</strong></p>
+                <p>We are a community of gamers and programmers. We host game servers for multiple games. We are proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution to your community.</p>
+                <p>If you want to learn more about us check out our about page, or if you have any inquiries you can contact us through our contact page.</p>
+              </div>
+            </div>
           </div>
-          <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Privacy and Terms</a></li>
-            <li><a href="#">User Agreement</a></li>
-          </ul>
+          <div class="mdl-card fix-discord mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow-3dp">
+            <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+          </div>
         </div>
-        <div class="mdl-mini-footer__right-section">
-          <button class="mdl-mini-footer__social-btn social-btn social-btn__twitter"></button>
-          <button class="mdl-mini-footer__social-btn"></button>
-          <button class="mdl-mini-footer__social-btn"></button>
+        <div class="project-container mdl-grid">
+          <div class="mdl-card lwa-card mdl-cell mdl-cell--4-col mdl-shadow--3dp">
+
+          </div>
         </div>
-      </footer>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section fix-footer-left">
+            <div class="mdl-logo">
+              © 2018 Copyright Void Inc.
+            </div>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a href="https://community.voidinc.net/tos">Terms of Service</a></li>
+              <li><a href="https://community.voidinc.net/privacy">Privacy</a></li>
+              <li><a href="https://community.voidinc.net/faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="mdl-mini-footer__right-section fix-footer-right">
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-twitter-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-github-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-google-plus-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-steam"></button>
+          </div>
+        </footer>
+      </main>
     </div>
   </body>
 </html>
