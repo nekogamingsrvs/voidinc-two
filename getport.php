@@ -19,7 +19,7 @@
   * @license   http://www.php.net/license/3_01.txt  PHP License 3.01
   * @version   Git: 1.0
   * @link      https://voidinc.net/
-  * @since     File available since Release 1.0 
+  * @since     File available since Release 1.0
   */
 
   $debug = true;
@@ -36,4 +36,3 @@ if (! $check) {
 } else {
     echo "Online";
 }
-?>
