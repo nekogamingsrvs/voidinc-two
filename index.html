@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,400i,500,700,700i">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Void Inc.</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" />
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/materialdesignicons.min.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,400i,500,700,700i">
+    <!-- Scripts -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -22,15 +27,15 @@
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation -->
                 <nav class="mdl-navigation top-nav">
-                    <a class="mdl-navigation__link" href="">
+                    <a class="mdl-navigation__link" href="/contact">
                         <i class="material-icons mdi mdi-email" role="presentation"></i>
                         <span class="d-none d-sm-inline-block">Contact</span>
                     </a>
-                    <a class="mdl-navigation__link" href="">
+                    <a class="mdl-navigation__link" href="https://discord.me/voidinc2">
                         <i class="material-icons mdi mdi-message-text" role="presentation"></i>
                         <span class="d-none d-sm-inline-block">Discord</span>
                     </a>
-                    <a class="mdl-navigation__link" href="">
+                    <a class="mdl-navigation__link" href="https://community.voidinc.net/">
                         <i class="material-icons mdi mdi-forum" role="presentation"></i>
                         <span class="d-none d-sm-inline-block">Forum</span>
                     </a>
@@ -41,21 +46,23 @@
                     <div id="starbound-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
                         <span class="server-title">Starbound</span>
                         <script>
-                            $(document).ready(function() {
+                            $(document).ready(function () {
                                 $.ajax({
                                     type: "POST",
                                     url: "http://test.voidinc.net/getport.php",
                                     data: {
                                         port: "21025"
                                     },
-                                    success: function(data) {
+                                    success: function (data) {
                                         console.log(data);
 
                                         if (data === "Online") {
-                                            $("#starbound-status").append("<span class=\"online\">Online</span>");
+                                            $("#starbound-status").append(
+                                                "<span class=\"online\">Online</span>");
                                         }
                                         if (data === "Offline") {
-                                            $("#starbound-status").append("<span class=\"offline\">Offline</span>")
+                                            $("#starbound-status").append(
+                                                "<span class=\"offline\">Offline</span>")
                                         }
                                     }
                                 })
@@ -65,21 +72,23 @@
                     <div id="rust-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
                         <span class="server-title">Rust</span>
                         <script>
-                            $(document).ready(function() {
+                            $(document).ready(function () {
                                 $.ajax({
                                     type: "POST",
                                     url: "http://test.voidinc.net/getport.php",
                                     data: {
                                         port: "28015"
                                     },
-                                    success: function(data) {
+                                    success: function (data) {
                                         console.log(data);
 
                                         if (data === "Online") {
-                                            $("#rust-status").append("<span class=\"online\">Online</span>");
+                                            $("#rust-status").append(
+                                                "<span class=\"online\">Online</span>");
                                         }
                                         if (data === "Offline") {
-                                            $("#rust-status").append("<span class=\"offline\">Offline</span>")
+                                            $("#rust-status").append(
+                                                "<span class=\"offline\">Offline</span>")
                                         }
                                     }
                                 })
@@ -89,21 +98,23 @@
                     <div id="starmade-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
                         <span class="server-title">StarMade</span>
                         <script>
-                            $(document).ready(function() {
+                            $(document).ready(function () {
                                 $.ajax({
                                     type: "POST",
                                     url: "http://test.voidinc.net/getport.php",
                                     data: {
                                         port: "4242"
                                     },
-                                    success: function(data) {
+                                    success: function (data) {
                                         console.log(data);
 
                                         if (data === "Online") {
-                                            $("#starmade-status ").append(" < span class = \"online\">Online</span>");
+                                            $("#starmade-status ").append(
+                                                " < span class = \"online\">Online</span>");
                                         }
                                         if (data === "Offline") {
-                                            $("#starmade-status").append("<span class=\"offline\">Offline</span>")
+                                            $("#starmade-status").append(
+                                                "<span class=\"offline\">Offline</span>")
                                         }
                                     }
                                 })
@@ -114,10 +125,9 @@
         </header>
         <div class="mdl-layout__drawer side-nav" aria-hidden="true">
             <span class="mdl-layout-title">
-          <!-- Void Logo -->
-          <img class="header-logo" src="/assets/img/logo_128.png" />
-          Void Inc.
-        </span>
+                <!-- Void Logo -->
+                <img class="header-logo" src="/assets/img/logo_128.png" /> Void Inc.
+            </span>
             <nav class="mdl-navigation">
                 <a class="mdl-color-text--black mdl-navigation__link" href="/">
                     <i class="mdl-color-text--black material-icons mdi mdi-home" role="presentation"></i> Home
@@ -154,14 +164,20 @@
                     <div class="mdl-card__supporting-text meta mdl-color-text--black">
                         <div class="minilogo"></div>
                         <div>
-                            <p><strong class="mdl-color-text--blue">Gamers and programmers in space.</strong></p>
-                            <p>We are a community of gamers and programmers. We host game servers for multiple games. We are proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution to your community.</p>
-                            <p>If you want to learn more about us check out our about page, or if you have any inquiries you can contact us through our contact page.</p>
+                            <p>
+                                <strong class="mdl-color-text--blue">Gamers and programmers in space.</strong>
+                            </p>
+                            <p>We are a community of gamers and programmers. We host game servers for multiple games. We are
+                                proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution
+                                to your community.</p>
+                            <p>If you want to learn more about us check out our about page, or if you have any inquiries you
+                                can contact us through our contact page.</p>
                         </div>
                     </div>
                 </div>
                 <div class="mdl-card fix-discord mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow-3dp">
-                    <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+                    <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true"
+                        frameborder="0"></iframe>
                 </div>
             </div>
             <div class="project-container mdl-grid">
@@ -175,9 +191,15 @@
                         © 2018 Copyright Void Inc.
                     </div>
                     <ul class="mdl-mini-footer__link-list">
-                        <li><a href="https://community.voidinc.net/tos">Terms of Service</a></li>
-                        <li><a href="https://community.voidinc.net/privacy">Privacy</a></li>
-                        <li><a href="https://community.voidinc.net/faq">FAQ</a></li>
+                        <li>
+                            <a href="https://community.voidinc.net/tos">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="https://community.voidinc.net/privacy">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="https://community.voidinc.net/faq">FAQ</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="mdl-mini-footer__right-section fix-footer-right">
