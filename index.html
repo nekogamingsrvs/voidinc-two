@@ -46,33 +46,23 @@
           <div class="mdl-grid">
             <div id="starbound-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
               <span class="server-title">Starbound</span>
-              <script>
-                $(document).ready(function(){$.ajax({type:"POST",url:"http://test.voidinc.net/getport.php",data:{port:"21025"},success:function(data){console.log(data);if(data === "Online"){$("#starbound-status").append("<span class=\"online\">Online</span>");}if(data.includes("Offline")){$("#starbound-status").append("<span class=\"offline\">Offline</span>")}}})});
-              </script>
+              <span id="starbound-var" class="pending">Pending</span>
             </div>
             <div id="rust-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
               <span class="server-title">Rust</span>
-              <script>
-                $(document).ready(function(){$.ajax({type:"POST",url:"http://test.voidinc.net/getport.php",data:{port:"28015"},success:function(data){console.log(data);if (data === "Online"){$("#rust-status").append("<span class=\"online\">Online</span>");}if(data.includes("Offline")){$("#rust-status").append("<span class=\"offline\">Offline</span>")}}})});
-              </script>
+                <span id="rust-var" class="pending">Pending</span>
             </div>
             <div id="starmade-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
               <span class="server-title">StarMade</span>
-              <script>
-                $(document).ready(function(){$.ajax({type:"POST",url:"http://test.voidinc.net/getport.php",data:{port:"4242"},success:function(data){console.log(data);if(data === "Online"){$("#starmade-status").append("<span class=\"online\">Online</span>");}if(data.includes("Offline")){$("#starmade-status").append("<span class=\"offline\">Offline</span>")}}})});
-              </script>
+              <span id="starmade-var" class="pending">Pending</span>
             </div>
             <div id="unturned-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
               <span class="server-title">Unturned</span>
-              <script>
-                $(document).ready(function(){$.ajax({type:"POST",url:"http://test.voidinc.net/getport.php",data:{port:"27079"},success:function(data){console.log(data);if(data === "Online"){$("#unturned-status").append("<span class=\"online\">Online</span>");}if(data.includes("Offline")){$("#unturned-status").append("<span class=\"offline\">Offline</span>")}}})});
-              </script>
+              <span id="unturned-var" class="pending">Pending</span>
             </div>
             <div id="minecraft-status" class="mdl-cell mdl-cell--2-col mdl-layout__header dark-header server-status">
               <span class="server-title">Minecraft</span>
-              <script>
-                $(document).ready(function(){$.ajax({type:"POST",url:"http://test.voidinc.net/getport.php",data:{port:"25565"},success:function(data){console.log(data);if(data === "Online"){$("#minecraft-status").append("<span class=\"online\">Online</span>");}if(data.includes("Offline")){$("#minecraft-status").append("<span class=\"offline\">Offline</span>")}}})});
-              </script>
+              <span id="minecraft-var" class="pending">Pending</span>
             </div>
           </div>
       </header>
