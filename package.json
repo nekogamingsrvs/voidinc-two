@@ -4,7 +4,12 @@
   "description": "Void Inc. Test Website",
   "repository": "https://github.com/vvoidinc/voidinc-test-page",
   "main": "index.js",
-  "keywords": ["material","design","webpage","test"],
+  "keywords": [
+    "material",
+    "design",
+    "webpage",
+    "test"
+  ],
   "bugs": "https://github.com/vvoidinc/voidinc-test-page/issues",
   "homepage": "http://test.voidinc.net",
   "engines": {},
@@ -15,7 +20,7 @@
   "author": "thakyZ",
   "license": "ISC",
   "dependencies": {
-    "mdi": "latest",
-    "material-design-lite": "latest"
+    "material-design-lite": "latest",
+    "mdi": "latest"
   }
 }
