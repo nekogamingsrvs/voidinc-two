@@ -335,3 +335,6 @@ div.dark-header {
   height: auto;
 }
 
+.server-status__header {
+  z-index: 2;
+}
