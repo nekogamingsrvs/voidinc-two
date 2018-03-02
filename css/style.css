@@ -331,3 +331,7 @@ div.dark-header {
   color: #69afff;
 }
 
+.top-nav .mdl-button {
+  height: auto;
+}
+
