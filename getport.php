@@ -21,7 +21,7 @@
   * @since     File available since Release 1.0
   */
 
-  $debug = true;
+  $debug = false;
   $site = '199.168.141.221';
   $port = $_POST['port'];
 
