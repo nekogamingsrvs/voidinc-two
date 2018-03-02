@@ -25,22 +25,58 @@
     <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
       <header class="header-transparent mdl-layout__header is-casting-shadow">
         <div class="mdl-layout__header-row mdl-layout__header dark-header">
+          <nav class="mdl-navigation top-nav">
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/">
+              <i class="material-icons mdi mdi-home" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Home</span>
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/about">
+              <i class="material-icons mdi mdi-heart" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">About</span>
+            </button>
+            <button id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
+              <i class="material-icons mdi mdi-heart" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Projects</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
+              <li class="mdl-menu__item" href="//test.voidinc.net/games">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Games</span>
+              </li>
+              <li class="mdl-menu__item" href="//test.voidinc.net/mods">
+                <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Mods</span>
+              </li>
+              <li class="mdl-menu__item" href="//test.voidinc.net/tools">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-settings">Tools</span>
+              </li>
+            </ul>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/servers">
+              <i class="material-icons mdi mdi-server" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Servers</span>
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/donate">
+              <i class="material-icons mdi mdi-gift" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Donate</span>
+            </button>
+          </nav>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
           <nav class="mdl-navigation top-nav">
-            <a class="mdl-navigation__link" href="/contact">
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/contact">
               <i class="material-icons mdi mdi-email" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Contact</span>
-            </a>
-            <a class="mdl-navigation__link" href="https://discord.me/voidinc2">
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.me/voidinc2">
               <i class="material-icons mdi mdi-message-text" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Discord</span>
-            </a>
-            <a class="mdl-navigation__link" href="https://community.voidinc.net/">
-              <i class="material-icons mdi mdi-forum" role="presentation"></i>
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="https://community.voidinc.net/">
+              <i class="material-icons mdi mdi-briefcase" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Forum</span>
-            </a>
+            </button>
           </nav>
         </div>
         <div class="server-status__header">
@@ -66,39 +102,8 @@
               <span id="minecraft-var" class="pending">Pending</span>
             </div>
           </div>
+        </div>
       </header>
-      <div class="mdl-layout__drawer side-nav" aria-hidden="true">
-        <span class="mdl-layout-title">
-                <!-- Void Logo -->
-                <img class="header-logo" src="/assets/img/logo_128.png" /> Void Inc.
-            </span>
-        <nav class="mdl-navigation">
-          <a class="mdl-color-text--black mdl-navigation__link" href="/">
-                    <i class="mdl-color-text--black material-icons mdi mdi-home" role="presentation"></i> Home
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-heart" role="presentation"></i> About
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-briefcase" role="presentation"></i> Projects
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-gamepad" role="presentation"></i> Games
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-note-plus" role="presentation"></i> Mods
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-settings" role="presentation"></i> Tools
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-server" role="presentation"></i> Servers
-                </a>
-          <a class="mdl-color-text--black mdl-navigation__link" href="">
-                    <i class="mdl-color-text--black material-icons mdi mdi-gift" role="presentation"></i> Donate
-                </a>
-        </nav>
-      </div>
       <main class="mdl-layout__content vi-background">
         <div class="home-container mdl-grid">
           <div class="mdl-card vi-banner mdl-cell mdl-cell--8-col mdl-shadow--3dp">
