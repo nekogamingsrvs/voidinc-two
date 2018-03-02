@@ -106,6 +106,14 @@ div.dark-header {
   width: 100%;
 }
 
+.server-status__header .server-status .pending {
+  font-size: 32px;
+  color: #FFCA28;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+}
+
 .footer-fix {
   width: inherit;
 }
