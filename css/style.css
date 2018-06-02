@@ -14,6 +14,19 @@ code {
   max-height: 256px;
 }
 
+@media screen and (max-width: 1024px) {
+  .mdl-layout__header-row {
+    min-height: 56px !important;
+    padding: 0 16px 0 72px !important;
+    flex-wrap: wrap !important;
+    flex: auto !important;
+    height: fit-content !important;
+  }
+  .mdl-layout__header-row .mdl-navigation__link {
+    padding: 0px !important;
+  }
+}
+
 .header-transparent .mdl-layout__header,
 .header-transparent .mdl-layout__drawer-button {
   color: white;
@@ -42,8 +55,10 @@ div.dark-header {
   margin-right: 32px;
 }
 
-.top-nav .mdl-navigation__link .material-icons {
-  margin-right: 8px;
+@media screen and (min-width: 1024px) {
+  .top-nav .mdl-navigation__link .material-icons {
+    margin-right: 8px;
+  }
 }
 
 .mdl-layout-title {
@@ -81,7 +96,11 @@ div.dark-header {
   }
 }
 
-@media (max-width: 576px) {}
+@media (max-width: 576px) {
+  .mdl-menu__item .d-sm-inline-block {
+    display: inline-block !important;
+  }
+}
 
 .server-status__header .server-status span.server-title {
   font-size: 16px;
