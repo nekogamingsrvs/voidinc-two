@@ -235,7 +235,7 @@ div.dark-header {
 }
 
 .vi .mdl-card__supporting-text {
-  width: 100%;
+  width: fit-content;
   padding: 16px;
   min-height: 64px;
   display: -webkit-flex;
