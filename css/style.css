@@ -374,3 +374,7 @@ div.dark-header {
 .server-status__header {
   z-index: 2;
 }
+
+.mdl-text-color--black {
+  color: #000000;
+}
