@@ -1,227 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Void Incournic</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" type="text/css" />
+  <link rel="stylesheet" href="//code.getmdl.io/1.3.0/material.min.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.min.css" type="text/css" />
+  <!-- Fonts -->
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" type="text/css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700" type="text/css" />
+  <!-- Scripts -->
+  <script defer src="//code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/getServerStatus.min.js"></script>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="mask-icon" href="/safari-mask.svg" color="black">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/favicons/manifest.json">
+  <meta name="msapplication-TileColor" content="#0080ff">
+  <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#0080ff">
+</head>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Void Incournic</title>
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="//code.getmdl.io/1.3.0/material.blue_grey-blue.min.css" type="text/css" />
-    <link rel="stylesheet" href="//code.getmdl.io/1.3.0/material.min.css" type="text/css" />
-    <link rel="stylesheet" href="/css/style.min.css" type="text/css" />
-    <!-- Fonts -->
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.8.94/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" type="text/css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css" />
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700" type="text/css" />
-    <!-- Scripts -->
-    <script defer src="//code.getmdl.io/1.3.0/material.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/getServerStatus.min.js"></script>
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="mask-icon" href="/safari-mask.svg" color="black">
-    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#0080ff">
-    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#0080ff">
-  </head>
-
-  <body>
-    <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
-      <header class="header-transparent mdl-layout__header is-casting-shadow">
-        <div class="mdl-layout__header-row mdl-layout__header dark-header nav-overflow">
-          <nav class="mdl-navigation top-nav">
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/">
-              <i class="material-icons mdi mdi-home" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Home</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/about">
-              <i class="material-icons mdi mdi-heart" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">About</span>
-            </a>
-            <a id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
-              <i class="material-icons mdi mdi-heart" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Projects</span>
-            </a>
-            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/games">
-                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Games</span>
-                </a>
-              </li>
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/mods">
-                  <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Mods</span>
-                </a>
-              </li>
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/tools">
-                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Tools</span>
-                </a>
-              </li>
-            </ul>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/servers">
-              <i class="material-icons mdi mdi-server" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Servers</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/donate">
-              <i class="material-icons mdi mdi-gift" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Donate</span>
-            </a>
-          </nav>
-          <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
-          <!-- Navigation -->
-          <nav class="mdl-navigation top-nav">
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/contact">
-              <i class="material-icons mdi mdi-email" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Contact</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.me/voidincournic">
-              <i class="material-icons mdi mdi-message-text" role="presentation"></i>
-              <span class="d-none d-sm-inline-block">Discord</span>
-            </a>
-          </nav>
-        </div>
-        <div class="server-status__header">
-          <div class="mdl-grid">
-            <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">Starbound <i id="starbound-var" class='mdi mdi-dots-horizontal-circle pending'></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="starbound-var">sb.voidinc.net</div>
-            </div>
-            <div id="rust-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">Rust <i id="rust-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="rust-var">rust.voidinc.net</div>
-            </div>
-            <div id="starmade-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">StarMade <i id="starmade-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="starmade-var">sm.voidinc.net</div>
-            </div>
-            <div id="conan-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">Conan Exiles <i id="conan-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="conan-var">102.165.36.180:29091</div>
-            </div>
-            <div id="unturned-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">Unturned <i id="unturned-var" class='mdi mdi-dots-horizontal-circle pending'></i> <i id="unturned_arena-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="unturned-var">un.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="unturned_arena-var">una.voidinc.net</div>
-            </div>
-            <div id="minecraft-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">Minecraft <i id="minecraft1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft3-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft1-var">mc.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft2-var">mc2.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft3-var">mc3.voidinc.net</div>
-            </div>
-            <div id="ark-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark1-var">ark1.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark2-var">ark2.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark3-var">ark3.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark4-var">ark4.voidinc.net</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark5-var">ark5.voidinc.net</div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="mdl-layout__content vi-background">
-        <div class="home-container mdl-grid">
-          <div class="mdl-card vi-banner mdl-cell mdl-cell--8-col mdl-shadow--3dp">
-            <div class="mdl-card__media mdl-color-text--white">
-              <h3>Void Incournic</h3>
-            </div>
-            <div class="mdl-card__supporting-text meta">
-              <div class="minilogo"></div>
-              <div>
-                <p>
-                  <strong class="mdl-color-text--blue">Gamers and programmers in space.</strong>
-                </p>
-                <p>We are a community of gamers and programmers. We host game servers for multiple games. We are proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution to your community.</p>
-                <p>If you want to learn more about us check out our about page, or if you have any inquiries you can contact us through our contact page.</p>
-              </div>
-            </div>
-          </div>
-          <div class="mdl-card fix-discord mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow-3dp">
-            <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
-          </div>
-        </div>
-        <div class="project-container mdl-grid">
-          <div class="lwa-card project-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--3dp">
-            <div class="mdl-card__title mdl-card--expand">
-              <div class="mdl-card__banner"></div>
-              <h2 class="mdl-card__title-text"> </h2>
-            </div>
-            <div class="mdl-card__supporting-text">
-              Our first game, which is still in developement. Sadly it gets stalled a lot.
-              <br>
-              This game is a platformer with puzzle like features.
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                View Project
+<body>
+  <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
+    <header class="header-transparent mdl-layout__header is-casting-shadow">
+      <div class="mdl-layout__header-row mdl-layout__header dark-header nav-overflow">
+        <nav class="mdl-navigation top-nav">
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/">
+            <i class="material-icons mdi mdi-home" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Home</span>
+          </a>
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/about">
+            <i class="material-icons mdi mdi-heart" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">About</span>
+          </a>
+          <a id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
+            <i class="material-icons mdi mdi-heart" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Projects</span>
+          </a>
+          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
+            <li class="mdl-menu__item">
+              <a class="mdl-text-color--black" href="/games">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Games</span>
               </a>
-            </div>
-          </div>
-            <div class="sb-card project-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--3dp">
-              <div class="mdl-card__title mdl-card--expand">
-                <div class="mdl-card__banner"></div>
-                <h2 class="mdl-card__title-text"> </h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                We have many Starbound mods that we work on and try to keep up to date as best as possible
-                <br>
-                Some of our mods are now deprecated since they are only patches for our Starbound server's mod pack.
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                  View Project
-                </a>
-              </div>
-            </div>
-        </div>
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer__left-section fix-footer-left">
-            <div class="mdl-logo">
-              © 2018 Copyright Nick Mullally
-            </div>
-            <ul class="mdl-mini-footer__link-list">
-              <li>
-                <a href="https://community.voidinc.net/tos">Terms of Service</a>
-              </li>
-              <li>
-                <a href="https://community.voidinc.net/privacy">Privacy</a>
-              </li>
-              <li>
-                <a href="https://community.voidinc.net/faq">FAQ</a>
-              </li>
-            </ul>
-          </div>
-          <div class="mdl-mini-footer__right-section fix-footer-right">
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-twitter-box" href="https://twitter.com/voidincournic"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-github-box" href="https://github.com/voidincournic"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-google-plus-box" href="https://plus.google.com/communities/102882711100582602580"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-steam" href="https://steamcommunity.com/groups/voidincournic"></a>
-          </div>
-        </footer>
-      </main>
+            </li>
+            <li class="mdl-menu__item">
+              <a class="mdl-text-color--black" href="/mods">
+                <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Mods</span>
+              </a>
+            </li>
+            <li class="mdl-menu__item">
+              <a class="mdl-text-color--black" href="/tools">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Tools</span>
+              </a>
+            </li>
+          </ul>
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/servers">
+            <i class="material-icons mdi mdi-server" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Servers</span>
+          </a>
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/donate">
+            <i class="material-icons mdi mdi-gift" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Donate</span>
+          </a>
+        </nav>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation -->
+        <nav class="mdl-navigation top-nav">
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/contact">
+            <i class="material-icons mdi mdi-email" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Contact</span>
+          </a>
+          <a class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.me/voidincournic">
+            <i class="material-icons mdi mdi-message-text" role="presentation"></i>
+            <span class="d-none d-sm-inline-block">Discord</span>
+          </a>
+        </nav>
       </div>
-  </body>
+      <div class="server-status__header">
+        <div class="mdl-grid">
+          <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">Starbound <i id="starbound-var" class='mdi mdi-dots-horizontal-circle pending'></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="starbound-var">sb.voidinc.net</div>
+          </div>
+          <div id="rust-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">Rust <i id="rust-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="rust-var">rust.voidinc.net</div>
+          </div>
+          <div id="starmade-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">StarMade <i id="starmade-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="starmade-var">sm.voidinc.net</div>
+          </div>
+          <div id="conan-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">Conan Exiles <i id="conan-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="conan-var">102.165.36.180:29091</div>
+          </div>
+          <div id="unturned-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">Unturned <i id="unturned-var" class='mdi mdi-dots-horizontal-circle pending'></i> <i id="unturned_arena-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="unturned-var">un.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="unturned_arena-var">una.voidinc.net</div>
+          </div>
+          <div id="minecraft-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">Minecraft <i id="minecraft1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft3-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft1-var">mc.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft2-var">mc2.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft3-var">mc3.voidinc.net</div>
+          </div>
+          <div id="ark-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+            <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i>
+              <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+            <div class="mdl-tooltip mdl-tooltip--large" for="ark1-var">ark1.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="ark2-var">ark2.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="ark3-var">ark3.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="ark4-var">ark4.voidinc.net</div>
+            <div class="mdl-tooltip mdl-tooltip--large" for="ark5-var">ark5.voidinc.net</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="mdl-layout__content vi-background">
+      <div class="home-container mdl-grid">
+        <div class="mdl-card vi-banner mdl-cell mdl-cell--8-col mdl-shadow--3dp">
+          <div class="mdl-card__media mdl-color-text--white">
+            <h3>Void Incournic</h3>
+          </div>
+          <div class="mdl-card__supporting-text meta">
+            <div class="minilogo"></div>
+            <div>
+              <p>
+                <strong class="mdl-color-text--blue">Gamers and programmers in space.</strong>
+              </p>
+              <p>We are a community of gamers and programmers. We host game servers for multiple games. We are proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution to your community.</p>
+              <p>If you want to learn more about us check out our about page, or if you have any inquiries you can contact us through our contact page.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mdl-card fix-discord mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow-3dp">
+          <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="project-container mdl-grid">
+        <div class="lwa-card project-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--3dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <div class="mdl-card__banner"></div>
+            <h2 class="mdl-card__title-text"> </h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            Our first game, which is still in developement. Sadly it gets stalled a lot.
+            <br>
+            This game is a platformer with puzzle like features.
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div class="sb-card project-card mdl-card mdl-cell mdl-cell--4-col mdl-shadow--3dp">
+          <div class="mdl-card__title mdl-card--expand">
+            <div class="mdl-card__banner"></div>
+            <h2 class="mdl-card__title-text"> </h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+            We have many Starbound mods that we work on and try to keep up to date as best as possible
+            <br>
+            Some of our mods are now deprecated since they are only patches for our Starbound server's mod pack.
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+            <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="mdl-mini-footer">
+        <div class="mdl-mini-footer__left-section fix-footer-left">
+          <div class="mdl-logo">
+            © 2018 Copyright Nick Mullally
+          </div>
+          <ul class="mdl-mini-footer__link-list">
+            <li>
+              <a href="https://community.voidinc.net/tos">Terms of Service</a>
+            </li>
+            <li>
+              <a href="https://community.voidinc.net/privacy">Privacy</a>
+            </li>
+            <li>
+              <a href="https://community.voidinc.net/faq">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mdl-mini-footer__right-section fix-footer-right">
+          <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-twitter-box" href="https://twitter.com/voidincournic"></a>
+          <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-github-box" href="https://github.com/voidincournic"></a>
+          <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-google-plus-box" href="https://plus.google.com/communities/102882711100582602580"></a>
+          <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-steam" href="https://steamcommunity.com/groups/voidincournic"></a>
+        </div>
+      </footer>
+    </main>
+  </div>
+</body>
 
 </html>
