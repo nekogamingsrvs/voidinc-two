@@ -1,44 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-      <div class="server-status__header">
-        <div class="mdl-grid">
-          <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">Starbound <i id="starbound-var" class='mdi mdi-dots-horizontal-circle pending'></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="starbound-var">sb.voidinc.net</div>
-          </div>
-          <div id="rust-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">Rust <i id="rust-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="rust-var">rust.voidinc.net</div>
-          </div>
-          <div id="starmade-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">StarMade <i id="starmade-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="starmade-var">sm.voidinc.net</div>
-          </div>
-          <div id="conan-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">Conan Exiles <i id="conan-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="conan-var">102.165.36.180:29091</div>
-          </div>
-          <div id="unturned-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">Unturned <i id="unturned-var" class='mdi mdi-dots-horizontal-circle pending'></i> <i id="unturned_arena-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="unturned-var">un.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="unturned_arena-var">una.voidinc.net</div>
-          </div>
-          <div id="minecraft-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">Minecraft <i id="minecraft1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft3-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft1-var">mc.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft2-var">mc2.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="minecraft3-var">mc3.voidinc.net</div>
-          </div>
-          <div id="ark-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-            <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i>
-              <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-            <div class="mdl-tooltip mdl-tooltip--large" for="ark1-var">ark1.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="ark2-var">ark2.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="ark3-var">ark3.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="ark4-var">ark4.voidinc.net</div>
-            <div class="mdl-tooltip mdl-tooltip--large" for="ark5-var">ark5.voidinc.net</div>
-          </div>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -78,6 +40,7 @@
     <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#0080ff">
   </head>
+
   <body>
     <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
       <header class="header-transparent mdl-layout__header is-casting-shadow">
@@ -138,22 +101,43 @@
             </a>
           </nav>
         </div>
-      </div>
-    </header>
-    <main class="mdl-layout__content vi-background">
-      <div class="home-container mdl-grid">
-        <div class="mdl-card vi-banner mdl-cell mdl-cell--8-col mdl-shadow--3dp">
-          <div class="mdl-card__media mdl-color-text--white">
-            <h3>Void Incournic</h3>
-          </div>
-          <div class="mdl-card__supporting-text meta">
-            <div class="minilogo"></div>
-            <div>
-              <p>
-                <strong class="mdl-color-text--blue">Gamers and programmers in space.</strong>
-              </p>
-              <p>We are a community of gamers and programmers. We host game servers for multiple games. We are proud to call Void Inc. home, and want others to join us. We hope you can make a great contribution to your community.</p>
-              <p>If you want to learn more about us check out our about page, or if you have any inquiries you can contact us through our contact page.</p>
+        <div class="server-status__header">
+          <div class="mdl-grid">
+            <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">Starbound <i id="starbound-var" class='mdi mdi-dots-horizontal-circle pending'></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="starbound-var">sb.voidinc.net:21025</div>
+            </div>
+            <div id="rust-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">Rust <i id="rust-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="rust-var">rust.voidinc.net:28015</div>
+            </div>
+            <div id="starmade-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">StarMade <i id="starmade-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="starmade-var">sm.voidinc.net:4242</div>
+            </div>
+            <div id="conan-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">Conan Exiles <i id="conan-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="conan-var">102.165.36.180:29091</div>
+            </div>
+            <div id="unturned-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">Unturned <i id="unturned-var" class='mdi mdi-dots-horizontal-circle pending'></i> <i id="unturned_arena-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="unturned-var">un.voidinc.net:27080</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="unturned_arena-var">un.voidinc.net:27083</div>
+            </div>
+            <div id="minecraft-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">Minecraft <i id="minecraft1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft3-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft1-var">mc.voidinc.net:25565</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft2-var">mc.voidinc.net:25566</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft3-var">mc.voidinc.net:25567</div>
+            </div>
+            <div id="ark-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
+              <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark6-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark1-var">ark.voidinc.net:27015</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark2-var">ark.voidinc.net:27016</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark3-var">ark.voidinc.net:27017</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark4-var">ark.voidinc.net:37015</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark5-var">ark.voidinc.net:37017</div>
+              <div class="mdl-tooltip mdl-tooltip--large" for="ark6-var">ark.voidinc.net:37019</div>
             </div>
           </div>
         </div>
