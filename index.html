@@ -1,66 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<body>
-  <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
-    <header class="header-transparent mdl-layout__header is-casting-shadow">
-      <div class="mdl-layout__header-row mdl-layout__header dark-header nav-overflow">
-        <nav class="mdl-navigation top-nav">
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/">
-            <i class="material-icons mdi mdi-home" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Home</span>
-          </a>
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/about">
-            <i class="material-icons mdi mdi-heart" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">About</span>
-          </a>
-          <a id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
-            <i class="material-icons mdi mdi-heart" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Projects</span>
-          </a>
-          <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
-            <li class="mdl-menu__item">
-              <a class="mdl-text-color--black" href="/games">
-                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                <span class="d-none d-sm-inline-block">Games</span>
-              </a>
-            </li>
-            <li class="mdl-menu__item">
-              <a class="mdl-text-color--black" href="/mods">
-                <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
-                <span class="d-none d-sm-inline-block">Mods</span>
-              </a>
-            </li>
-            <li class="mdl-menu__item">
-              <a class="mdl-text-color--black" href="/tools">
-                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                <span class="d-none d-sm-inline-block">Tools</span>
-              </a>
-            </li>
-          </ul>
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/servers">
-            <i class="material-icons mdi mdi-server" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Servers</span>
-          </a>
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/donate">
-            <i class="material-icons mdi mdi-gift" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Donate</span>
-          </a>
-        </nav>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation top-nav">
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="/contact">
-            <i class="material-icons mdi mdi-email" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Contact</span>
-          </a>
-          <a class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.me/voidincournic">
-            <i class="material-icons mdi mdi-message-text" role="presentation"></i>
-            <span class="d-none d-sm-inline-block">Discord</span>
-          </a>
-        </nav>
-      </div>
       <div class="server-status__header">
         <div class="mdl-grid">
           <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
@@ -138,6 +78,65 @@
     <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#0080ff">
   </head>
+  <body>
+    <div class="vi mdl-layout mdl-js-layout mdl-layout--fixed-header has-drawer is-upgraded">
+      <header class="header-transparent mdl-layout__header is-casting-shadow">
+        <div class="mdl-layout__header-row mdl-layout__header dark-header nav-overflow">
+          <nav class="mdl-navigation top-nav">
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/">
+              <i class="material-icons mdi mdi-home" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Home</span>
+            </a>
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/about">
+              <i class="material-icons mdi mdi-heart" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">About</span>
+            </a>
+            <a id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
+              <i class="material-icons mdi mdi-heart" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Projects</span>
+            </a>
+            <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
+              <li class="mdl-menu__item">
+                <a class="mdl-text-color--black" href="/games">
+                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                  <span class="d-none d-sm-inline-block">Games</span>
+                </a>
+              </li>
+              <li class="mdl-menu__item">
+                <a class="mdl-text-color--black" href="/mods">
+                  <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
+                  <span class="d-none d-sm-inline-block">Mods</span>
+                </a>
+              </li>
+              <li class="mdl-menu__item">
+                <a class="mdl-text-color--black" href="/tools">
+                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                  <span class="d-none d-sm-inline-block">Tools</span>
+                </a>
+              </li>
+            </ul>
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/servers">
+              <i class="material-icons mdi mdi-server" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Servers</span>
+            </a>
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/donate">
+              <i class="material-icons mdi mdi-gift" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Donate</span>
+            </a>
+          </nav>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation top-nav">
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/contact">
+              <i class="material-icons mdi mdi-email" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Contact</span>
+            </a>
+            <a class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.gg/rZvVf8s">
+              <i class="material-icons mdi mdi-message-text" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Discord</span>
+            </a>
+          </nav>
         </div>
       </div>
     </header>
