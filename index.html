@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,98 +45,81 @@
       <header class="header-transparent mdl-layout__header is-casting-shadow">
         <div class="mdl-layout__header-row mdl-layout__header dark-header nav-overflow">
           <nav class="mdl-navigation top-nav">
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/">
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/">
               <i class="material-icons mdi mdi-home" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Home</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/about">
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/about">
               <i class="material-icons mdi mdi-heart" role="presentation"></i>
               <span class="d-none d-sm-inline-block">About</span>
-            </a>
-            <a id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
+            </button>
+            <button id="projects-dropdown" class="mdl-navigation__link mdl-button mdl-js-button">
               <i class="material-icons mdi mdi-heart" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Projects</span>
-            </a>
+            </button>
             <ul class="mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="projects-dropdown">
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/games">
-                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Games</span>
-                </a>
+              <li class="mdl-menu__item" href="//test.voidinc.net/games">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Games</span>
               </li>
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/mods">
-                  <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Mods</span>
-                </a>
+              <li class="mdl-menu__item" href="//test.voidinc.net/mods">
+                <i class="material-icons mdi mdi-note-plus" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Mods</span>
               </li>
-              <li class="mdl-menu__item">
-                <a class="mdl-text-color--black" href="/tools">
-                  <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
-                  <span class="d-none d-sm-inline-block">Tools</span>
-                </a>
+              <li class="mdl-menu__item" href="//test.voidinc.net/tools">
+                <i class="material-icons mdi mdi-gamepad" role="presentation"></i>
+                <span class="d-none d-sm-inline-block">Tools</span>
               </li>
             </ul>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/servers">
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/servers">
               <i class="material-icons mdi mdi-server" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Servers</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/donate">
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/donate">
               <i class="material-icons mdi mdi-gift" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Donate</span>
-            </a>
+            </button>
           </nav>
           <!-- Add spacer, to align navigation to the right -->
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation -->
           <nav class="mdl-navigation top-nav">
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="/contact">
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="//test.voidinc.net/contact">
               <i class="material-icons mdi mdi-email" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Contact</span>
-            </a>
-            <a class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.gg/rZvVf8s">
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="https://discord.me/voidinc2">
               <i class="material-icons mdi mdi-message-text" role="presentation"></i>
               <span class="d-none d-sm-inline-block">Discord</span>
-            </a>
+            </button>
+            <button class="mdl-navigation__link mdl-button mdl-js-button" href="https://community.voidinc.net/">
+              <i class="material-icons mdi mdi-briefcase" role="presentation"></i>
+              <span class="d-none d-sm-inline-block">Forum</span>
+            </button>
           </nav>
         </div>
         <div class="server-status__header">
           <div class="mdl-grid">
             <div id="starbound-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">Starbound <i id="starbound-var" class='mdi mdi-dots-horizontal-circle pending'></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="starbound-var">sb.voidinc.net:21025</div>
             </div>
             <div id="rust-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">Rust <i id="rust-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="rust-var">rust.voidinc.net:28015</div>
             </div>
             <div id="starmade-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">StarMade <i id="starmade-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="starmade-var">sm.voidinc.net:4242</div>
             </div>
             <div id="conan-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">Conan Exiles <i id="conan-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="conan-var">102.165.36.180:29091</div>
             </div>
             <div id="unturned-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">Unturned <i id="unturned-var" class='mdi mdi-dots-horizontal-circle pending'></i> <i id="unturned_arena-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="unturned-var">un.voidinc.net:27080</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="unturned_arena-var">un.voidinc.net:27083</div>
             </div>
             <div id="minecraft-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
               <span class="server-title">Minecraft <i id="minecraft1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="minecraft3-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft1-var">mc.voidinc.net:25565</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft2-var">mc.voidinc.net:25566</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="minecraft3-var">mc.voidinc.net:25567</div>
             </div>
             <div id="ark-status" class="mdl-cell mdl-cell--1-col dark-header server-status">
-              <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark6-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark1-var">ark.voidinc.net:27015</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark2-var">ark.voidinc.net:27016</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark3-var">ark.voidinc.net:27017</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark4-var">ark.voidinc.net:37015</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark5-var">ark.voidinc.net:37017</div>
-              <div class="mdl-tooltip mdl-tooltip--large" for="ark6-var">ark.voidinc.net:37019</div>
+              <span class="server-title">ARK <i id="ark1-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark2-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark3-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark4-var" class="mdi mdi-dots-horizontal-circle pending"></i> <i id="ark5-var" class="mdi mdi-dots-horizontal-circle pending"></i></span>
             </div>
           </div>
         </div>
@@ -160,7 +142,7 @@
             </div>
           </div>
           <div class="mdl-card fix-discord mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop mdl-shadow-3dp">
-            <iframe src="https://discordapp.com/widget?id=486289309310386196&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+            <iframe src="https://discordapp.com/widget?id=392066498438496266&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
           </div>
         </div>
         <div class="project-container mdl-grid">
@@ -215,10 +197,10 @@
             </ul>
           </div>
           <div class="mdl-mini-footer__right-section fix-footer-right">
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-twitter-box" href="https://twitter.com/voidincournic"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-github-box" href="https://github.com/voidincournic"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-google-plus-box" href="https://plus.google.com/communities/102882711100582602580"></a>
-            <a class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-steam" href="https://steamcommunity.com/groups/voidincournic"></a>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-twitter-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-github-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-google-plus-box"></button>
+            <button class="mdl-mini-footer__social-btn mdl-color-text--white social-btn material-icons mdi mdi-steam"></button>
           </div>
         </footer>
       </main>
