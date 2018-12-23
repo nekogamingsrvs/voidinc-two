@@ -32,7 +32,7 @@
   $rust_port = 28015;
   $starmade_port = 4242;
   $unturned_port = 27081;
-  $unturned_arena_port = 27084;
+  $unturned_arena_port = 27083;
   $minecraft1_port = 25565;
   $minecraft2_port = 25566;
   $minecraft3_port = 25567;
@@ -42,6 +42,7 @@
   $ark3_port = 27022;
   $ark4_port = 37016;
   $ark5_port = 37018;
+  $ark6_port = 37020;
 
   foreach ($services as &$service) {
     if ($service == 'starbound') {
@@ -98,6 +99,10 @@
     }
     elseif ($service == 'ark5') {
       check_running("$ark5_port", "$service");
+      error_log(print_r("$service", true));
+    }
+    elseif ($service == 'ark6') {
+      check_running("$ark6_port", "$service");
       error_log(print_r("$service", true));
     }
   }
@@ -271,6 +276,17 @@
         } else {
           echo "
             $(\"#ark5-var\").addClass(\"offline\").removeClass(\"pending\").addClass(\"mdi-close-circle\").removeClass(\"mdi-dots-horizontal-circle\");
+          ";
+        }
+        break;
+      case "ark6":
+        if ($state) {
+          echo "
+            $(\"#ark6-var\").addClass(\"online\").removeClass(\"pending\").addClass(\"mdi-check-circle\").removeClass(\"mdi-dots-horizontal-circle\");
+          ";
+        } else {
+          echo "
+            $(\"#ark6-var\").addClass(\"offline\").removeClass(\"pending\").addClass(\"mdi-close-circle\").removeClass(\"mdi-dots-horizontal-circle\");
           ";
         }
         break;
